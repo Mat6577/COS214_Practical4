@@ -3,7 +3,7 @@ CXXFLAGS = -std=c++11 -Wall
 
 SOURCES = main.cpp \
 
-TARGET =  eventflow
+TARGET =  taskforge
 
 all: $(TARGET)
 
