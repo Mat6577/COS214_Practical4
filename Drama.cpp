@@ -1,5 +1,9 @@
 #include "Drama.h"
 
+/**
+ * @brief This is used to get information regarding the drama genre. It will be appended to the movie print.
+ * @return It return a string
+ */
 std::string Drama::getMetaData() {
 	std::string string = "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 	string += "+ Age_Classification:                                                     PG  +\n";
@@ -11,6 +15,10 @@ std::string Drama::getMetaData() {
 	return string;
 }
 
+
+/**
+ * @brief Used to print the information it receives from the get method
+ */
 void Drama::printMetaData() {	
 	std::cout << this->getMetaData();
 }

@@ -1,5 +1,9 @@
 #include "Comedy.h"
 
+/**
+ * @brief This is used to get information regarding the comedy genre. It will be appended to the movie print.
+ * @return It return a string
+ */
 std::string Comedy::getMetaData() {
 	std::string string = "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 	string += "+ Age_Classification:                                            12A / PG-13  +\n";
@@ -11,6 +15,9 @@ std::string Comedy::getMetaData() {
 	return string;
 }
 
+/**
+ * @brief Used to print the information it receives from the get method
+ */
 void Comedy::printMetaData() {
 	std::cout << this->getMetaData();
 }
