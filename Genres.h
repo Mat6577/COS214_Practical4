@@ -13,9 +13,9 @@ public:
 
 	~Genres();
 
-	virtual Film* getFilm() = 0;
+	Film* getFilm();
 
-	virtual void setFilm(Film* film);
+	void setFilm(Film* film);
 
 	virtual std::string getMetaData() = 0;
 
