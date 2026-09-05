@@ -1,5 +1,9 @@
 #include "Thriller.h"
 
+/**
+ * @brief This is used to get information regarding the thriller genre. It will be appended to the movie print.
+ * @return It return a string
+ */
 std::string Thriller::getMetaData() {
 	std::string string = "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 	string += "+ Age_Classification:                                                     15  +\n";
@@ -12,6 +16,9 @@ std::string Thriller::getMetaData() {
 	return string;
 }
 
+/**
+ * @brief Used to print the information it receives from the get method
+ */
 void Thriller::printMetaData() {
 	std::cout << this->getMetaData();
 }
