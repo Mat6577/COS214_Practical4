@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['horror_0',['Horror',['../class_horror.html',1,'']]]
+  ['genres_0',['Genres',['../class_genres.html',1,'']]]
 ];

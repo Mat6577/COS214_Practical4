@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "Film", null, [
+    [ "Film", "class_film.html", [
       [ "Genres", "class_genres.html", [
         [ "Comedy", "class_comedy.html", null ],
         [ "Drama", "class_drama.html", null ],

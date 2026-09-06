@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['liveactionfilm_0',['LiveActionFilm',['../class_live_action_film.html',1,'']]]
+  ['thriller_0',['Thriller',['../class_thriller.html',1,'']]]
 ];
