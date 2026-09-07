@@ -2,14 +2,6 @@
 #include "FilmIterator.h"
 #include <iostream>
 
-FilmCategories::FilmCategories()
-{
-}
-
-FilmCategories::~FilmCategories()
-{
-}
-
 std::string FilmCategories::getMetaData()
 {
     return "Film Category";

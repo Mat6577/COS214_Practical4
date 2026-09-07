@@ -2,19 +2,7 @@
 #include "FilmTypes.h"
 #include <iostream>
 
-States::States()
-{
-}
-
-States::~States()
-{
-}
-
 // Development
-
-Development::Development()
-{
-}
 
 void Development::printState()
 {
@@ -33,10 +21,6 @@ void Development::changeState(FilmTypes* film)
 
 // Production
 
-Production::Production()
-{
-}
-
 void Production::printState()
 {
     std::cout << "Production" << std::endl;
@@ -53,10 +37,6 @@ void Production::changeState(FilmTypes* film)
 }
 
 //  Distribution 
-
-Distribution::Distribution()
-{
-}
 
 void Distribution::printState()
 {

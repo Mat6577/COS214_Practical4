@@ -62,3 +62,5 @@ public:
     std::string getMetaData() override;
     void printMetaData() override;
 };
+
+#endif
