@@ -8,7 +8,7 @@ class Film {
 
 
 public:
-	~Film();
+	virtual ~Film();
 
 	virtual std::string getMetaData() = 0;
 

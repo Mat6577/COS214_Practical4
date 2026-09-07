@@ -3,11 +3,15 @@
 
 #include "Film.h"
 #include <list>
-
+#include <string>
+class FilmCategoryIterator;
 class FilmIterator;
+class StateBasedIterator;
 
 class AbstractFilmCategories : public Film
 {
+    friend class FilmCategoryIterator;
+    friend class StateBasedIterator;
 protected:
     std::list<Film*> children;
 
@@ -19,7 +23,7 @@ public:
     virtual void setChildren(std::list<Film*> children);
 
     virtual FilmIterator* createIterator() = 0;
-
+    virtual FilmIterator* createStateIterator(const std::string& state)=0;
     virtual void add(Film* child);
     virtual void remove(Film* child);
     virtual Film* getChild(int index);
