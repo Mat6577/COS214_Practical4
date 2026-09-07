@@ -16,6 +16,7 @@ FilmTypes::~FilmTypes()
 
 void FilmTypes::setState(States* state)
 {
+    delete this->state;
     this->state = state;
 }
 
