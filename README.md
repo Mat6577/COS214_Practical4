@@ -6,7 +6,6 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 |**Design Pattern**|**Name**|
 |------------------|--------|
 |Iterator|[States]FilmIterator|
-||StateIterator|
 |Composite|[FilmCategories](#film)|
 |State|[States](#states)|
 |Decorator|[Genres](#genres)| 
@@ -20,8 +19,8 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 |**Abstract Iterator**| FilmCategoryIterator |
 || StateBasedIterator |
 |**Concrete Iterators**|FilmIterator|
-|**Abstract Aggregates**|AbstractFilmCategories|
-||FilmCategories|
+|**Abstract Aggregate**|AbstractFilmCategories|
+|**Concrete Aggregate**|FilmCategories|
 
 ## States
 ### This implements the state pattern.
