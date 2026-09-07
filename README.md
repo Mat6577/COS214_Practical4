@@ -9,10 +9,10 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 |Composite|[FilmCategories](#film)|
 |State|[States](#states)|
 |Decorator|[Genres](#genres)| 
-##
-##
-##
-##
+#
+#
+#
+#
 ---
 ## Installation
 ```bash
