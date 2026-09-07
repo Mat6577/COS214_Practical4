@@ -5,14 +5,14 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 ## Table of contents
 |**Design Pattern**|**Name**|
 |------------------|--------|
-|Iterator|FilmIterator|
+|Iterator|#FilmIterator|
 ||StateIterator|
-|Composite|FilmCategories|
-|State|States|
-|Decorator|Genres| 
+|Composite|#FilmCategories|
+|State|#States|
+|Decorator|#Genres| 
 
 
-## Iterator
+## Iterator (FilmIterator, StateIterator)
 ### This implements the Iterator pattern.
 
 | Pattern participants | mapping |
