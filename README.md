@@ -12,8 +12,8 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 |Decorator|Genres| 
 
 
-### Genres
-## This implements the decorator pattern.
+## Genres
+### This implements the decorator pattern.
 
 | Pattern participants | mapping |
 |----------------------|---------|
