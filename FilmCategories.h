@@ -13,6 +13,7 @@ public:
     void printMetaData() override;
 
     FilmIterator* createIterator() override;
+    FilmIterator* createStateIterator(const std::string& state);
 };
 
 #endif
