@@ -15,7 +15,7 @@ public:
 
 	void printMetaData();
 
-	Horror();
+	Horror(Film* film);
 };
 
 #endif
