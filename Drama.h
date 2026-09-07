@@ -7,7 +7,7 @@
 #include "Film.h"
 #include "Genres.h"
 
-class Drama : Genres {
+class Drama : public Genres {
 
 
 public:
@@ -15,7 +15,7 @@ public:
 
 	void printMetaData();
 
-	Drama();
+	Drama(Film* film);
 };
 
 #endif

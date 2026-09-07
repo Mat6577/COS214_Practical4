@@ -11,7 +11,7 @@
 #include "Genres.h"
 
 
-class Thriller : Genres {
+class Thriller : public Genres {
 
 
 public:
@@ -19,7 +19,7 @@ public:
 
 	void printMetaData();
 
-	Thriller();
+	Thriller(Film* film);
 };
 
 #endif

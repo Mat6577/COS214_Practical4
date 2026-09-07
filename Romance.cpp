@@ -23,5 +23,6 @@ void Romance::printMetaData() {
 	std::cout << this->getMetaData();
 }
 
-Romance::Romance() {};
+Romance::Romance(Film* film)
+	: Genres(film) {};
 

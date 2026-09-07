@@ -7,7 +7,7 @@
 #include "Film.h"
 #include "Genres.h"
 
-class Horror : Genres {
+class Horror : public Genres {
 
 
 public:

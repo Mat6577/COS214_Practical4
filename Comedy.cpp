@@ -22,4 +22,5 @@ void Comedy::printMetaData() {
 	std::cout << this->getMetaData();
 }
 
-Comedy::Comedy() {}
+Comedy::Comedy(Film* film) 
+	: Genres(film) {}
