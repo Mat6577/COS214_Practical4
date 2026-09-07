@@ -5,10 +5,10 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 ## Table of contents
 |**Design Pattern**|**Name**|
 |------------------|--------|
-|Iterator|#FilmIterator|
+|Iterator|[States]FilmIterator|
 ||StateIterator|
 |Composite|#FilmCategories|
-|State|#States|
+|State|[States](#states)|
 |Decorator|#Genres| 
 
 
