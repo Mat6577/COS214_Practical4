@@ -4,9 +4,18 @@
 #include "StateBasedIterator.h"
 #include <iostream>
 
+FilmCategories::FilmCategories(std::string name)
+{
+    categoryName = name;
+}
+
+FilmCategories::~FilmCategories()
+{
+}
+
 std::string FilmCategories::getMetaData()
 {
-    return "Film Category";
+    return categoryName;
 }
 
 void FilmCategories::printMetaData()
