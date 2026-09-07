@@ -7,9 +7,9 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 |------------------|--------|
 |Iterator|[States]FilmIterator|
 ||StateIterator|
-|Composite|#FilmCategories|
+|Composite|[FilmCategories](#film)|
 |State|[States](#states)|
-|Decorator|#Genres| 
+|Decorator|[Genres](#genres)| 
 
 
 ## Iterator (FilmIterator, StateIterator)
@@ -34,7 +34,7 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 ||Distribution|
 ||Production|
 
-## Comosite
+## Film
 ### This implements the composite pattern.
 
 | Pattern participants | mapping |
