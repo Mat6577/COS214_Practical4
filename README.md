@@ -10,7 +10,7 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 |State|[States](#states)|
 |Decorator|[Genres](#genres)| 
 
-
+---
 ## Iterator
 ### This implements the Iterator pattern.
 
