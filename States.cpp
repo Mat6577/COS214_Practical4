@@ -18,15 +18,17 @@ Development::Development()
 
 void Development::printState()
 {
+    std::cout << "Development" << std::endl;
 }
 
 std::string Development::getStateInformation()
 {
-    return "";
+    return "Development";
 }
 
 void Development::changeState(FilmTypes* film)
 {
+    film->setState(new Production());
 }
 
 // Production
@@ -37,18 +39,20 @@ Production::Production()
 
 void Production::printState()
 {
+    std::cout << "Production" << std::endl;
 }
 
 std::string Production::getStateInformation()
 {
-    return "";
+    return "Production";
 }
 
 void Production::changeState(FilmTypes* film)
 {
+    film->setState(new Distribution());
 }
 
-// Distribution
+//  Distribution 
 
 Distribution::Distribution()
 {
@@ -56,13 +60,15 @@ Distribution::Distribution()
 
 void Distribution::printState()
 {
+    std::cout << "Distribution" << std::endl;
 }
 
 std::string Distribution::getStateInformation()
 {
-    return "";
+    return "Distribution";
 }
 
 void Distribution::changeState(FilmTypes* film)
 {
+    // Final state
 }
