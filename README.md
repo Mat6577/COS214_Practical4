@@ -1,6 +1,6 @@
 # COS214_Practical4
 Fourth practical for COS 214 (Design Patterns).
-We were tasked to implement four design patterns, namely; **Composite, Decorator, iterator, and state**.
+We were tasked with implementing four design patterns: **Composite, Decorator, Iterator, and State**.
 
 ## Table of contents
 |**Design Pattern**|**Name**|
@@ -10,3 +10,16 @@ We were tasked to implement four design patterns, namely; **Composite, Decorator
 |Composite|FilmCategories|
 |State|States|
 |Decorator|Genres| 
+
+
+### Genres
+## This implements the decorator pattern.
+
+| Pattern participants | mapping |
+|----------------------|---------|
+|**Abstract Decorator**| Genres |
+|**Concrete Decorators**|Comedy|
+||Drama|
+||Horror|
+||Romance|
+||Thriller|
