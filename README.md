@@ -9,10 +9,14 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 |Composite|[FilmCategories](#film)|
 |State|[States](#states)|
 |Decorator|[Genres](#genres)| 
-#
-#
-#
-#
+---
+## Features
+- You, as the user, can plan a movie
+- Then you can add/categorize the movie under multiple genres
+- When you are done with the planning, you will follow the different states that each movie must follow
+- Once you've reached the deploy state, the movie will be stored under a directory
+- This directory stores all movies with similar specifications to your movie
+- The directory allows ease of traversal from one directory to the next
 ---
 ## Installation
 ```bash
