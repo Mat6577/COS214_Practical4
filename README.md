@@ -9,4 +9,4 @@ We were tasked to implement four design patterns, namely; **Composite, Decorator
 ||StateIterator|
 |Composite|FilmCategories|
 |State|States|
-|Decorator|Genres|
+|Decorator|Genres| 
