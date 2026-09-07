@@ -12,6 +12,41 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 |Decorator|Genres| 
 
 
+## Iterator
+### This implements the Iterator pattern.
+
+| Pattern participants | mapping |
+|----------------------|---------|
+|**Abstract Iterator**| FilmCategoryIterator |
+|| StateBasedIterator |
+|**Concrete Iterators**|FilmIterator|
+|**Abstract Aggregates**|AbstractFilmCategories|
+||FilmCategories|
+
+## States
+### This implements the state pattern.
+
+| Pattern participants | mapping |
+|----------------------|---------|
+|**Client**| FilmTypes |
+|**AbstractState**| States |
+|**ConcreteState**|Development|
+||Distribution|
+||Production|
+
+## Comosite
+### This implements the composite pattern.
+
+| Pattern participants | mapping |
+|----------------------|---------|
+|**Composite**| FilmCategories |
+|**Leafs**|AnimatedFilm|
+||BlockbusterFilm|
+||IndependentFilm|
+||LiveActionFilm|
+||ShortFilm|
+
+
 ## Genres
 ### This implements the decorator pattern.
 
