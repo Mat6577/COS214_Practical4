@@ -6,19 +6,12 @@ AbstractFilmCategories::AbstractFilmCategories()
 
 AbstractFilmCategories::~AbstractFilmCategories()
 {
-}
+    for(Film* child : children)
+    {
+        delete child;
+    }
 
-void AbstractFilmCategories::add(Film* film)
-{
-}
-
-void AbstractFilmCategories::remove(Film* film)
-{
-}
-
-Film* AbstractFilmCategories::getChild(int index)
-{
-    return nullptr;
+    children.clear();
 }
 
 std::list<Film*> AbstractFilmCategories::getChildren()
@@ -29,4 +22,36 @@ std::list<Film*> AbstractFilmCategories::getChildren()
 void AbstractFilmCategories::setChildren(std::list<Film*> children)
 {
     this->children = children;
+}
+
+void AbstractFilmCategories::add(Film* child)
+{
+    children.push_back(child);
+}
+
+void AbstractFilmCategories::remove(Film* child)
+{
+    children.remove(child);
+}
+
+Film* AbstractFilmCategories::getChild(int index)
+{
+    if(index < 0)
+    {
+        return nullptr;
+    }
+
+    auto it = children.begin();
+
+    for(int i = 0; i < index && it != children.end(); i++)
+    {
+        ++it;
+    }
+
+    if(it == children.end())
+    {
+        return nullptr;
+    }
+
+    return *it;
 }

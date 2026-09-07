@@ -3,19 +3,16 @@
 
 #include "AbstractFilmCategories.h"
 
-class FilmCategories : public AbstractFilmCategories {
+class FilmCategories : public AbstractFilmCategories
+{
 public:
     FilmCategories();
-    ~FilmCategories();
+    ~FilmCategories() override;
 
     std::string getMetaData() override;
     void printMetaData() override;
 
     FilmIterator* createIterator() override;
-
-    void add(Film* film) override;
-    void remove(Film* film) override;
-    Film* getChild(int index) override;
 };
 
 #endif
