@@ -1,5 +1,7 @@
 #include "FilmCategories.h"
 #include "FilmIterator.h"
+#include "FilmCategoryIterator.h"
+#include "StateBasedIterator.h"
 #include <iostream>
 
 std::string FilmCategories::getMetaData()
@@ -14,5 +16,9 @@ void FilmCategories::printMetaData()
 
 FilmIterator* FilmCategories::createIterator()
 {
-    return nullptr;
+    return new FilmCategoryIterator(this);
 }
+
+FilmIterator* FilmCategories::createStateIterator(const std::string& state){
+    return new StateBasedIterator(this,state);
+ }
