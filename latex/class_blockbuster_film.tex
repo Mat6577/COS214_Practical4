@@ -3,36 +3,49 @@
 Inheritance diagram for Blockbuster\+Film:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_blockbuster_film}
+\includegraphics[height=3.000000cm]{class_blockbuster_film}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-string \doxymbox{\hyperlink{class_blockbuster_film_a6ba2840eb525e2bd7bf732e7c978137e}{get\+Meta\+Data}} ()
+std::\+string \doxymbox{\hyperlink{class_blockbuster_film_a6ccbb45c0b16a750245ef873a242ce84}{get\+Meta\+Data}} () override
 \item 
-void \doxymbox{\hyperlink{class_blockbuster_film_a3e1165f82b30a9b71da0fc31a17ce831}{print\+Meta\+Data}} ()
+void \doxymbox{\hyperlink{class_blockbuster_film_acb9d6c43a807b728166826792b5727ec}{print\+Meta\+Data}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_film_types}{Film\+Types}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+State} (\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*}state)
+\item 
+\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*} {\bfseries get\+State} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_film_types}{Film\+Types}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*} {\bfseries state}
 \end{DoxyCompactItemize}
 
 
 \label{class_blockbuster_film_doc-func-members}
 \Hypertarget{class_blockbuster_film_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_blockbuster_film_a6ba2840eb525e2bd7bf732e7c978137e}\index{BlockbusterFilm@{BlockbusterFilm}!getMetaData@{getMetaData}}
+\Hypertarget{class_blockbuster_film_a6ccbb45c0b16a750245ef873a242ce84}\index{BlockbusterFilm@{BlockbusterFilm}!getMetaData@{getMetaData}}
 \index{getMetaData@{getMetaData}!BlockbusterFilm@{BlockbusterFilm}}
 \doxysubsubsection{\texorpdfstring{getMetaData()}{getMetaData()}}
-{\footnotesize\ttfamily \label{class_blockbuster_film_a6ba2840eb525e2bd7bf732e7c978137e} 
-string Blockbuster\+Film::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_blockbuster_film_a6ccbb45c0b16a750245ef873a242ce84} 
+std::\+string Blockbuster\+Film::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_film_types}{Film\+Types}}.
 
-\Hypertarget{class_blockbuster_film_a3e1165f82b30a9b71da0fc31a17ce831}\index{BlockbusterFilm@{BlockbusterFilm}!printMetaData@{printMetaData}}
+\Hypertarget{class_blockbuster_film_acb9d6c43a807b728166826792b5727ec}\index{BlockbusterFilm@{BlockbusterFilm}!printMetaData@{printMetaData}}
 \index{printMetaData@{printMetaData}!BlockbusterFilm@{BlockbusterFilm}}
 \doxysubsubsection{\texorpdfstring{printMetaData()}{printMetaData()}}
-{\footnotesize\ttfamily \label{class_blockbuster_film_a3e1165f82b30a9b71da0fc31a17ce831} 
-void Blockbuster\+Film::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_blockbuster_film_acb9d6c43a807b728166826792b5727ec} 
+void Blockbuster\+Film::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -42,5 +55,5 @@ Implements \doxymbox{\hyperlink{class_film_types}{Film\+Types}}.
 
 The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-Blockbuster\+Film.\+h\item 
-Blockbuster\+Film.\+cpp\end{DoxyCompactItemize}
+Film\+Types.\+h\item 
+Film\+Types.\+cpp\end{DoxyCompactItemize}

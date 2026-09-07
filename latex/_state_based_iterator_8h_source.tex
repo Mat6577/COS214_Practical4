@@ -1,0 +1,32 @@
+\doxysection{State\+Based\+Iterator.\+h}
+\hypertarget{_state_based_iterator_8h_source}{}\label{_state_based_iterator_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STATEBASEDITERATOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STATEBASEDITERATOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}FilmIterator.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_film_categories}{FilmCategories}};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_film}{Film}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }StateBasedIterator:\textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_film_iterator}{FilmIterator}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_film_categories}{FilmCategories}}*\ aggregate;}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ targetState;}
+\DoxyCodeLine{00016\ \ \ \ \ std::list<Film*>::const\_iterator\ currentIter;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ advanceToNextMatch();}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ StateBasedIterator(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_film_categories}{FilmCategories}}*\ cat,\ \textcolor{keyword}{const}\ std::string\&\ state);}
+\DoxyCodeLine{00020\ \ \ \ \ \string~StateBasedIterator()\ \textcolor{keyword}{override}=\textcolor{keywordflow}{default};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ first()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ next()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ isDone()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00024\ \ \ \ \ \doxymbox{\hyperlink{class_film}{Film}}*\ currentItem()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

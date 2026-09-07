@@ -9,42 +9,42 @@ Inheritance diagram for Development:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \doxymbox{\hyperlink{class_development_a43635ccda929c4f6e103a2baaf054f0d}{print\+State}} ()
+void \doxymbox{\hyperlink{class_development_a83a87f492a9378b57da5e2921df75ecb}{print\+State}} () override
 \item 
-void \doxymbox{\hyperlink{class_development_a61ebb95a77b6226b31f0e28b11a6efd7}{get\+State\+Information}} ()
+std::\+string \doxymbox{\hyperlink{class_development_ad5a5b1bb044639c6a907ef46daaeace7}{get\+State\+Information}} () override
 \item 
-void \doxymbox{\hyperlink{class_development_a1499391a8e3c3765e20ad49135792594}{change\+State}} (Film\+Type \texorpdfstring{$\ast$}{*}Film)
+void \doxymbox{\hyperlink{class_development_a5bab68c732ba8d9281a91e0f84ceab13}{change\+State}} (\doxymbox{\hyperlink{class_film_types}{Film\+Types}} \texorpdfstring{$\ast$}{*}film\+Type) override
 \end{DoxyCompactItemize}
 
 
 \label{class_development_doc-func-members}
 \Hypertarget{class_development_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_development_a1499391a8e3c3765e20ad49135792594}\index{Development@{Development}!changeState@{changeState}}
+\Hypertarget{class_development_a5bab68c732ba8d9281a91e0f84ceab13}\index{Development@{Development}!changeState@{changeState}}
 \index{changeState@{changeState}!Development@{Development}}
 \doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
-{\footnotesize\ttfamily \label{class_development_a1499391a8e3c3765e20ad49135792594} 
-void Development::\+change\+State (\begin{DoxyParamCaption}\item[{Film\+Type \texorpdfstring{$\ast$}{*}}]{Film}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_development_a5bab68c732ba8d9281a91e0f84ceab13} 
+void Development::\+change\+State (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_film_types}{Film\+Types}} \texorpdfstring{$\ast$}{*}}]{film\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_states}{States}}.
 
-\Hypertarget{class_development_a61ebb95a77b6226b31f0e28b11a6efd7}\index{Development@{Development}!getStateInformation@{getStateInformation}}
+\Hypertarget{class_development_ad5a5b1bb044639c6a907ef46daaeace7}\index{Development@{Development}!getStateInformation@{getStateInformation}}
 \index{getStateInformation@{getStateInformation}!Development@{Development}}
 \doxysubsubsection{\texorpdfstring{getStateInformation()}{getStateInformation()}}
-{\footnotesize\ttfamily \label{class_development_a61ebb95a77b6226b31f0e28b11a6efd7} 
-void Development::\+get\+State\+Information (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_development_ad5a5b1bb044639c6a907ef46daaeace7} 
+std::\+string Development::\+get\+State\+Information (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_states}{States}}.
 
-\Hypertarget{class_development_a43635ccda929c4f6e103a2baaf054f0d}\index{Development@{Development}!printState@{printState}}
+\Hypertarget{class_development_a83a87f492a9378b57da5e2921df75ecb}\index{Development@{Development}!printState@{printState}}
 \index{printState@{printState}!Development@{Development}}
 \doxysubsubsection{\texorpdfstring{printState()}{printState()}}
-{\footnotesize\ttfamily \label{class_development_a43635ccda929c4f6e103a2baaf054f0d} 
-void Development::\+print\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_development_a83a87f492a9378b57da5e2921df75ecb} 
+void Development::\+print\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -54,5 +54,5 @@ Implements \doxymbox{\hyperlink{class_states}{States}}.
 
 The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-Development.\+h\item 
-Development.\+cpp\end{DoxyCompactItemize}
+States.\+h\item 
+States.\+cpp\end{DoxyCompactItemize}

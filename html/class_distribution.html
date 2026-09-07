@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>COS 214 Practical 4: Distribution Class Reference</title>
+<title>My Project: Distribution Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">COS 214 Practical 4<span id="projectnumber">&#160;4</span>
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">We were instructed to implement the composite, decorator, state, and iterator patters</div>
   </td>
  </tr>
  </tbody>
@@ -124,13 +123,13 @@ Inheritance diagram for Distribution:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abd2b760f943ef8b5a8feb703ca70d0ed" id="r_abd2b760f943ef8b5a8feb703ca70d0ed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abd2b760f943ef8b5a8feb703ca70d0ed">printState</a> ()</td></tr>
-<tr class="memitem:a515ffe035ee25a9f755fef5642569260" id="r_a515ffe035ee25a9f755fef5642569260"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a515ffe035ee25a9f755fef5642569260">getStateInformation</a> ()</td></tr>
-<tr class="memitem:affd7dc8b090bfccb203a6ceab5efb3b2" id="r_affd7dc8b090bfccb203a6ceab5efb3b2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#affd7dc8b090bfccb203a6ceab5efb3b2">changeState</a> (FilmType *Film)</td></tr>
+<tr class="memitem:a0a3c96c2f082baf115e198a63e29c837" id="r_a0a3c96c2f082baf115e198a63e29c837"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0a3c96c2f082baf115e198a63e29c837">printState</a> () override</td></tr>
+<tr class="memitem:a4bc32cf0c9e614a0e803c3841a37a5cc" id="r_a4bc32cf0c9e614a0e803c3841a37a5cc"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a4bc32cf0c9e614a0e803c3841a37a5cc">getStateInformation</a> () override</td></tr>
+<tr class="memitem:a35f719cef3d000667a61b92ef69b783b" id="r_a35f719cef3d000667a61b92ef69b783b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a35f719cef3d000667a61b92ef69b783b">changeState</a> (<a class="el" href="class_film_types.html">FilmTypes</a> *filmType) override</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="affd7dc8b090bfccb203a6ceab5efb3b2" name="affd7dc8b090bfccb203a6ceab5efb3b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affd7dc8b090bfccb203a6ceab5efb3b2">&#9670;&#160;</a></span>changeState()</h2>
+<a id="a35f719cef3d000667a61b92ef69b783b" name="a35f719cef3d000667a61b92ef69b783b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f719cef3d000667a61b92ef69b783b">&#9670;&#160;</a></span>changeState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,13 +140,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void Distribution::changeState </td>
           <td>(</td>
-          <td class="paramtype">FilmType *</td>          <td class="paramname"><span class="paramname"><em>Film</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_film_types.html">FilmTypes</a> *</td>          <td class="paramname"><span class="paramname"><em>filmType</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -156,8 +155,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a515ffe035ee25a9f755fef5642569260" name="a515ffe035ee25a9f755fef5642569260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a515ffe035ee25a9f755fef5642569260">&#9670;&#160;</a></span>getStateInformation()</h2>
+<a id="a4bc32cf0c9e614a0e803c3841a37a5cc" name="a4bc32cf0c9e614a0e803c3841a37a5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc32cf0c9e614a0e803c3841a37a5cc">&#9670;&#160;</a></span>getStateInformation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +165,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Distribution::getStateInformation </td>
+          <td class="memname">std::string Distribution::getStateInformation </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -174,7 +173,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -183,8 +182,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abd2b760f943ef8b5a8feb703ca70d0ed" name="abd2b760f943ef8b5a8feb703ca70d0ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd2b760f943ef8b5a8feb703ca70d0ed">&#9670;&#160;</a></span>printState()</h2>
+<a id="a0a3c96c2f082baf115e198a63e29c837" name="a0a3c96c2f082baf115e198a63e29c837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3c96c2f082baf115e198a63e29c837">&#9670;&#160;</a></span>printState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +200,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -211,8 +210,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_distribution_8h_source.html">Distribution.h</a></li>
-<li><b>Distribution.cpp</b></li>
+<li><a class="el" href="_states_8h_source.html">States.h</a></li>
+<li><b>States.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

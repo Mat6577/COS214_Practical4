@@ -3,36 +3,49 @@
 Inheritance diagram for Live\+Action\+Film:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_live_action_film}
+\includegraphics[height=3.000000cm]{class_live_action_film}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-string \doxymbox{\hyperlink{class_live_action_film_a28e6d2a85bcf6c183ad8b04267eee71d}{get\+Meta\+Data}} ()
+std::\+string \doxymbox{\hyperlink{class_live_action_film_a5d700ed1f2ac4618d82942ac2dbaceef}{get\+Meta\+Data}} () override
 \item 
-void \doxymbox{\hyperlink{class_live_action_film_a7f89e4aad0e220429e0f846c642e749a}{print\+Meta\+Data}} ()
+void \doxymbox{\hyperlink{class_live_action_film_ae2bd33904f5ad714c2e8a2e7c1a4f846}{print\+Meta\+Data}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_film_types}{Film\+Types}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+State} (\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*}state)
+\item 
+\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*} {\bfseries get\+State} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_film_types}{Film\+Types}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*} {\bfseries state}
 \end{DoxyCompactItemize}
 
 
 \label{class_live_action_film_doc-func-members}
 \Hypertarget{class_live_action_film_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_live_action_film_a28e6d2a85bcf6c183ad8b04267eee71d}\index{LiveActionFilm@{LiveActionFilm}!getMetaData@{getMetaData}}
+\Hypertarget{class_live_action_film_a5d700ed1f2ac4618d82942ac2dbaceef}\index{LiveActionFilm@{LiveActionFilm}!getMetaData@{getMetaData}}
 \index{getMetaData@{getMetaData}!LiveActionFilm@{LiveActionFilm}}
 \doxysubsubsection{\texorpdfstring{getMetaData()}{getMetaData()}}
-{\footnotesize\ttfamily \label{class_live_action_film_a28e6d2a85bcf6c183ad8b04267eee71d} 
-string Live\+Action\+Film::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_live_action_film_a5d700ed1f2ac4618d82942ac2dbaceef} 
+std::\+string Live\+Action\+Film::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_film_types}{Film\+Types}}.
 
-\Hypertarget{class_live_action_film_a7f89e4aad0e220429e0f846c642e749a}\index{LiveActionFilm@{LiveActionFilm}!printMetaData@{printMetaData}}
+\Hypertarget{class_live_action_film_ae2bd33904f5ad714c2e8a2e7c1a4f846}\index{LiveActionFilm@{LiveActionFilm}!printMetaData@{printMetaData}}
 \index{printMetaData@{printMetaData}!LiveActionFilm@{LiveActionFilm}}
 \doxysubsubsection{\texorpdfstring{printMetaData()}{printMetaData()}}
-{\footnotesize\ttfamily \label{class_live_action_film_a7f89e4aad0e220429e0f846c642e749a} 
-void Live\+Action\+Film::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_live_action_film_ae2bd33904f5ad714c2e8a2e7c1a4f846} 
+void Live\+Action\+Film::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -42,5 +55,5 @@ Implements \doxymbox{\hyperlink{class_film_types}{Film\+Types}}.
 
 The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-Live\+Action\+Film.\+h\item 
-Live\+Action\+Film.\+cpp\end{DoxyCompactItemize}
+Film\+Types.\+h\item 
+Film\+Types.\+cpp\end{DoxyCompactItemize}

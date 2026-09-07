@@ -4,4 +4,77 @@
 \Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
 
 
-Fourth practical for COS 214 (Design Patterns). 
+Fourth practical for COS 214 (Design Patterns). We were tasked with implementing four design patterns: {\bfseries{Composite, Decorator, Iterator, and State}}.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Table of contents}{Table of contents}}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyTable}{2}{}{}{1}
+\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}{\bfseries{Design Pattern}}  &\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}{\bfseries{Name}}  \\
+Iterator  &Iterator  \\
+Composite  &Film\+Categories  \\
+State  &States  \\
+Decorator  &Genres  \\
+\end{DoxyTable}
+\DoxyHorRuler{0}
+ \hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Features}{Features}}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item You, as the user, can plan a movie
+\item Then you can add/\+categorize the movie under multiple genres
+\item When you are done with the planning, you will follow the different states that each movie must follow
+\item Once you\textquotesingle{}ve reached the deploy state, the movie will be stored under a directory
+\item This directory stores all movies with similar specifications to your movie 
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{-\/ The directory allows ease of traversal from one directory to the next}{-\/ The directory allows ease of traversal from one directory to the next}}\label{md__r_e_a_d_m_e_autotoc_md3}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ https://github.com/Mat6577/COS214\_Practical4/edit/main}
+\DoxyCodeLine{cd\ main}
+
+\end{DoxyCode}
+ \hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{\#\#}{\#\#}}\label{md__r_e_a_d_m_e_autotoc_md5}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{\texorpdfstring{Iterator}{Iterator}}\label{md__r_e_a_d_m_e_autotoc_md6}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{\texorpdfstring{This implements the Iterator pattern.}{This implements the Iterator pattern.}}\label{md__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyTable}{2}{}{}{1}
+\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Pattern participants  &\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}mapping  \\
+{\bfseries{Abstract Iterator}}  &\doxylink{class_film_category_iterator}{Film\+Category\+Iterator}  \\
+&\doxylink{class_state_based_iterator}{State\+Based\+Iterator}  \\
+{\bfseries{Concrete Iterators}}  &\doxylink{class_film_iterator}{Film\+Iterator}  \\
+{\bfseries{Abstract Aggregate}}  &\doxylink{class_abstract_film_categories}{Abstract\+Film\+Categories}  \\
+{\bfseries{Concrete Aggregate}}  &\doxylink{class_film_categories}{Film\+Categories}  \\
+\end{DoxyTable}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysection{\texorpdfstring{States}{States}}\label{md__r_e_a_d_m_e_autotoc_md8}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{\texorpdfstring{This implements the state pattern.}{This implements the state pattern.}}\label{md__r_e_a_d_m_e_autotoc_md9}
+
+\begin{DoxyTable}{2}{}{}{1}
+\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Pattern participants  &\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}mapping  \\
+{\bfseries{Client}}  &\doxylink{class_film_types}{Film\+Types}  \\
+{\bfseries{Abstract\+State}}  &\doxylink{class_states}{States}  \\
+{\bfseries{Concrete\+State}}  &\doxylink{class_development}{Development}  \\
+&\doxylink{class_distribution}{Distribution}  \\
+&\doxylink{class_production}{Production}  \\
+\end{DoxyTable}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysection{\texorpdfstring{Film}{Film}}\label{md__r_e_a_d_m_e_autotoc_md10}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{\texorpdfstring{This implements the composite pattern.}{This implements the composite pattern.}}\label{md__r_e_a_d_m_e_autotoc_md11}
+
+\begin{DoxyTable}{2}{}{}{1}
+\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Pattern participants  &\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}mapping  \\
+{\bfseries{Composite}}  &\doxylink{class_film_categories}{Film\+Categories}  \\
+{\bfseries{Component}}  &\doxylink{class_film}{Film}  \\
+{\bfseries{Leafs}}  &\doxylink{class_animated_film}{Animated\+Film}  \\
+&\doxylink{class_blockbuster_film}{Blockbuster\+Film}  \\
+&\doxylink{class_independent_film}{Independent\+Film}  \\
+&\doxylink{class_live_action_film}{Live\+Action\+Film}  \\
+&\doxylink{class_short_film}{Short\+Film}  \\
+\end{DoxyTable}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysection{\texorpdfstring{Genres}{Genres}}\label{md__r_e_a_d_m_e_autotoc_md12}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysubsection{\texorpdfstring{This implements the decorator pattern.}{This implements the decorator pattern.}}\label{md__r_e_a_d_m_e_autotoc_md13}
+
+\begin{DoxyTable}{2}{}{}{1}
+\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Pattern participants  &\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}mapping  \\
+{\bfseries{Abstract Decorator}}  &\doxylink{class_genres}{Genres}  \\
+{\bfseries{Concrete Decorators}}  &\doxylink{class_comedy}{Comedy}  \\
+&\doxylink{class_drama}{Drama}  \\
+&\doxylink{class_horror}{Horror}  \\
+&\doxylink{class_romance}{Romance}  \\
+&\doxylink{class_thriller}{Thriller}  \\
+\end{DoxyTable}

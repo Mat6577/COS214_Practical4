@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 166.666672
+%%BoundingBox: 0 0 500 185.430466
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 3.000000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 2.696429 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 3 def
+/rows 7 def
 /cols 5 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -174,7 +174,15 @@
 boxfont setfont
 1 boundaspect scale
 (Film) cw
+(AbstractFilmCategories) cw
+(FilmTypes) cw
 (Genres) cw
+(FilmCategories) cw
+(AnimatedFilm) cw
+(BlockbusterFilm) cw
+(IndependentFilm) cw
+(LiveActionFilm) cw
+(ShortFilm) cw
 (Comedy) cw
 (Drama) cw
 (Horror) cw
@@ -191,31 +199,63 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (Film) 2.000000 2.000000 box
- (Genres) 2.000000 1.000000 box
- (Comedy) 0.000000 0.000000 box
- (Drama) 1.000000 0.000000 box
- (Horror) 2.000000 0.000000 box
- (Romance) 3.000000 0.000000 box
+ (Film) 1.000000 6.000000 box
+ (AbstractFilmCategories) 0.000000 5.000000 box
+ (FilmTypes) 1.000000 5.000000 box
+ (Genres) 3.000000 5.000000 box
+ (FilmCategories) 0.000000 4.000000 box
+ (AnimatedFilm) 2.000000 4.000000 box
+ (BlockbusterFilm) 2.000000 3.000000 box
+ (IndependentFilm) 2.000000 2.000000 box
+ (LiveActionFilm) 2.000000 1.000000 box
+ (ShortFilm) 2.000000 0.000000 box
+ (Comedy) 4.000000 4.000000 box
+ (Drama) 4.000000 3.000000 box
+ (Horror) 4.000000 2.000000 box
+ (Romance) 4.000000 1.000000 box
  (Thriller) 4.000000 0.000000 box
 
 % ----- relations -----
 
-dotted
-1 2.000000 1.250000 out
-dotted
-0 2.000000 1.750000 in
-dotted
-1 2.000000 0.250000 out
-dotted
-0.000000 4.000000 1.000000 conn
-dotted
-0 0.000000 0.750000 in
-dotted
-0 1.000000 0.750000 in
-dotted
-0 2.000000 0.750000 in
-dotted
-0 3.000000 0.750000 in
-dotted
-0 4.000000 0.750000 in
+solid
+1 1.000000 5.250000 out
+solid
+0.000000 3.000000 6.000000 conn
+solid
+0 0.000000 5.750000 in
+solid
+1 0.000000 4.250000 out
+solid
+0 1.000000 5.750000 in
+solid
+1 1.000000 4.250000 out
+solid
+0 3.000000 5.750000 in
+solid
+1 3.000000 4.250000 out
+solid
+0 0.000000 4.750000 in
+solid
+0 1.000000 4.500000 hedge
+solid
+0 1.000000 3.500000 hedge
+solid
+0 1.000000 2.500000 hedge
+solid
+0 1.000000 1.500000 hedge
+solid
+0 1.000000 0.500000 hedge
+solid
+1.000000 5.000000 0.500000 vedge
+solid
+0 3.000000 4.500000 hedge
+solid
+0 3.000000 3.500000 hedge
+solid
+0 3.000000 2.500000 hedge
+solid
+0 3.000000 1.500000 hedge
+solid
+0 3.000000 0.500000 hedge
+solid
+3.000000 5.000000 0.500000 vedge

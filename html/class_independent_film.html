@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>COS 214 Practical 4: IndependentFilm Class Reference</title>
+<title>My Project: IndependentFilm Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">COS 214 Practical 4<span id="projectnumber">&#160;4</span>
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">We were instructed to implement the composite, decorator, state, and iterator patters</div>
   </td>
  </tr>
  </tbody>
@@ -118,18 +117,30 @@ Inheritance diagram for IndependentFilm:</div>
  <div class="center">
   <img src="class_independent_film.png" usemap="#IndependentFilm_map" alt=""/>
   <map id="IndependentFilm_map" name="IndependentFilm_map">
-<area href="class_film_types.html" alt="FilmTypes" shape="rect" coords="0,0,104,24"/>
+<area href="class_film_types.html" alt="FilmTypes" shape="rect" coords="0,56,104,80"/>
+<area href="class_film.html" alt="Film" shape="rect" coords="0,0,104,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a888339352895da4ea939922cd2537d7d" id="r_a888339352895da4ea939922cd2537d7d"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a888339352895da4ea939922cd2537d7d">getMetaData</a> ()</td></tr>
-<tr class="memitem:aa83d62db2908bf9d74973b432af4349d" id="r_aa83d62db2908bf9d74973b432af4349d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa83d62db2908bf9d74973b432af4349d">printMetaData</a> ()</td></tr>
+<tr class="memitem:afde891ab09cbfd3bb8d09936b0dc8c4d" id="r_afde891ab09cbfd3bb8d09936b0dc8c4d"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#afde891ab09cbfd3bb8d09936b0dc8c4d">getMetaData</a> () override</td></tr>
+<tr class="memitem:aec40db3f954c2477a7118438a950182f" id="r_aec40db3f954c2477a7118438a950182f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aec40db3f954c2477a7118438a950182f">printMetaData</a> () override</td></tr>
+<tr class="inherit_header pub_methods_class_film_types"><td colspan="2">Public Member Functions inherited from <a class="el" href="class_film_types.html">FilmTypes</a></td></tr>
+<tr class="memitem:a5559e0b7d63b6c1bb286b8cb1496eec1 pub_methods_class_film_types" id="r_a5559e0b7d63b6c1bb286b8cb1496eec1"><td class="memItemLeft">
+void&#160;</td><td class="memItemRight"><b>setState</b> (<a class="el" href="class_states.html">States</a> *state)</td></tr>
+<tr class="memitem:a94ba4efcde576bcb75c61f3fc66bfcea pub_methods_class_film_types" id="r_a94ba4efcde576bcb75c61f3fc66bfcea"><td class="memItemLeft">
+<a class="el" href="class_states.html">States</a> *&#160;</td><td class="memItemRight"><b>getState</b> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_film_types"><td colspan="2">Protected Attributes inherited from <a class="el" href="class_film_types.html">FilmTypes</a></td></tr>
+<tr class="memitem:a6afda2533d2d0d6f9d3daed3e55f439e pro_attribs_class_film_types" id="r_a6afda2533d2d0d6f9d3daed3e55f439e"><td class="memItemLeft">
+<a class="el" href="class_states.html">States</a> *&#160;</td><td class="memItemRight"><b>state</b></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a888339352895da4ea939922cd2537d7d" name="a888339352895da4ea939922cd2537d7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a888339352895da4ea939922cd2537d7d">&#9670;&#160;</a></span>getMetaData()</h2>
+<a id="afde891ab09cbfd3bb8d09936b0dc8c4d" name="afde891ab09cbfd3bb8d09936b0dc8c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde891ab09cbfd3bb8d09936b0dc8c4d">&#9670;&#160;</a></span>getMetaData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +149,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string IndependentFilm::getMetaData </td>
+          <td class="memname">std::string IndependentFilm::getMetaData </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -146,7 +157,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -155,8 +166,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa83d62db2908bf9d74973b432af4349d" name="aa83d62db2908bf9d74973b432af4349d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa83d62db2908bf9d74973b432af4349d">&#9670;&#160;</a></span>printMetaData()</h2>
+<a id="aec40db3f954c2477a7118438a950182f" name="aec40db3f954c2477a7118438a950182f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec40db3f954c2477a7118438a950182f">&#9670;&#160;</a></span>printMetaData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +184,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -183,8 +194,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_independent_film_8h_source.html">IndependentFilm.h</a></li>
-<li><b>IndependentFilm.cpp</b></li>
+<li><a class="el" href="_film_types_8h_source.html">FilmTypes.h</a></li>
+<li><b>FilmTypes.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
