@@ -1,39 +1,72 @@
 #include <iostream>
 
 #include "FilmCategories.h"
-#include "States.h"
 #include "FilmTypes.h"
-#include "Drama.h"
+#include "States.h"
+
 #include "Comedy.h"
+#include "Drama.h"
 #include "Horror.h"
 #include "Thriller.h"
 #include "Romance.h"
-#include "FilmCategoryIterator.h"
-#include "StateBasedIterator.h"
+
+#include "FilmIterator.h"
 
 int main()
 {
-    std::cout << "========== TASKFORGE TEST ==========\n" << std::endl;
+    std::cout << "========== TASKFORGE DEMO ==========\n" << std::endl;
 
-    // Categories
+    // =====================================================
+    // CREATE CATEGORIES
+    // =====================================================
+
     FilmCategories* comedyCollection =
         new FilmCategories("Comedy Collection");
 
     FilmCategories* featuredCollection =
         new FilmCategories("Featured Collection");
 
-    // Films
+    // =====================================================
+    // CREATE FILMS
+    // =====================================================
+
     ShortFilm* shortFilm = new ShortFilm();
     AnimatedFilm* animatedFilm = new AnimatedFilm();
     BlockbusterFilm* blockbusterFilm = new BlockbusterFilm();
 
-    // Add films
+    // =====================================================
+    // DECORATORS / GENRES
+    // =====================================================
+
+    std::cout << "=== GENRE INFORMATION ===" << std::endl;
+
+    Comedy comedy(shortFilm);
+    Horror horror(blockbusterFilm);
+    Romance romance(animatedFilm);
+
+    std::cout << "\nComedy Metadata:\n";
+    comedy.printMetaData();
+
+    std::cout << "\nHorror Metadata:\n";
+    horror.printMetaData();
+
+    std::cout << "\nRomance Metadata:\n";
+    romance.printMetaData();
+
+    // =====================================================
+    // COMPOSITE
+    // =====================================================
+
     comedyCollection->add(shortFilm);
     comedyCollection->add(animatedFilm);
     comedyCollection->add(blockbusterFilm);
 
-    std::cout << "=== CATEGORY INFO ===" << std::endl;
+    std::cout << "\n=== CATEGORY INFORMATION ===" << std::endl;
     comedyCollection->printMetaData();
+
+    // =====================================================
+    // ITERATOR 1
+    // =====================================================
 
     std::cout << "\n=== ALL FILMS ===" << std::endl;
 
@@ -54,15 +87,33 @@ int main()
 
     delete allFilms;
 
-    std::cout << "\n=== STATE TRANSITION ===" << std::endl;
+    // =====================================================
+    // STATE PATTERN
+    // =====================================================
 
-    std::cout << "Before: ";
+    std::cout << "\n=== FILM LIFECYCLE ===" << std::endl;
+
+    std::cout << "\nShort Film State:" << std::endl;
+
+    std::cout << "Current State: ";
     shortFilm->getState()->printState();
 
     shortFilm->getState()->changeState(shortFilm);
 
-    std::cout << "After: ";
+    std::cout << "After First Transition: ";
     shortFilm->getState()->printState();
+
+    shortFilm->getState()->changeState(shortFilm);
+
+    std::cout << "After Second Transition: ";
+    shortFilm->getState()->printState();
+
+    // Animated film into Production
+    animatedFilm->getState()->changeState(animatedFilm);
+
+    // =====================================================
+    // ITERATOR 2
+    // =====================================================
 
     std::cout << "\n=== PRODUCTION FILMS ===" << std::endl;
 
@@ -73,7 +124,8 @@ int main()
         !productionIterator->isDone();
         productionIterator->next())
     {
-        Film* current = productionIterator->currentItem();
+        Film* current =
+            productionIterator->currentItem();
 
         if(current)
         {
@@ -83,12 +135,20 @@ int main()
 
     delete productionIterator;
 
+    // =====================================================
+    // RUNTIME MODIFICATION
+    // =====================================================
+
     std::cout << "\n=== MOVING FILM ===" << std::endl;
 
     comedyCollection->remove(animatedFilm);
     featuredCollection->add(animatedFilm);
 
-    std::cout << "\nComedy Collection:" << std::endl;
+    // =====================================================
+    // TRAVERSE AGAIN
+    // =====================================================
+
+    std::cout << "\n=== COMEDY COLLECTION ===" << std::endl;
 
     FilmIterator* comedyIterator =
         comedyCollection->createIterator();
@@ -97,7 +157,8 @@ int main()
         !comedyIterator->isDone();
         comedyIterator->next())
     {
-        Film* current = comedyIterator->currentItem();
+        Film* current =
+            comedyIterator->currentItem();
 
         if(current)
         {
@@ -107,7 +168,7 @@ int main()
 
     delete comedyIterator;
 
-    std::cout << "\nFeatured Collection:" << std::endl;
+    std::cout << "\n=== FEATURED COLLECTION ===" << std::endl;
 
     FilmIterator* featuredIterator =
         featuredCollection->createIterator();
@@ -116,7 +177,8 @@ int main()
         !featuredIterator->isDone();
         featuredIterator->next())
     {
-        Film* current = featuredIterator->currentItem();
+        Film* current =
+            featuredIterator->currentItem();
 
         if(current)
         {
@@ -126,10 +188,16 @@ int main()
 
     delete featuredIterator;
 
+    // =====================================================
+    // CLEANUP
+    // =====================================================
+
     delete comedyCollection;
     delete featuredCollection;
 
-    std::cout << "\n========== END OF DEMO ==========" << std::endl;
+    std::cout
+        << "\n========== END OF DEMO =========="
+        << std::endl;
 
     return 0;
 }
