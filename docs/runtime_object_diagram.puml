@@ -1,0 +1,80 @@
+@startuml
+skinparam object {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor Black
+}
+
+title TaskForge Runtime Object Diagram: Nested Hierarchy Snapshot
+
+'Composite Objects 
+object "featuredCatalog : FilmCategories" as root{
+    childCount = 1
+}
+
+object "mainReleases : FilmCategories" as subCategory{
+    childCount = 2
+}
+
+'Decorator Objects
+object "comedyDecorator : Comedy" as dec1{
+    genre = "Comedy"
+}
+
+object "thrillerDecorator : Thriller" as dec2{
+    genre = "Thriller"
+}
+
+'Concrete Leaf (FilmTypes) Objects
+object "actionBlockbuster : BlockbusterFilm" as leaf2{
+    categoryType = "Blockbuster"
+}
+
+object "indieProject : IndependentFilm" as leaf1{
+    categoryType = "Independent"
+}
+
+'Concrete State Objects
+object "prodState : Production" as state1{
+    stateInformation = "Production"
+}
+
+object "devState : Development" as state2{
+    stateInformation="Development"
+}
+
+'Iterator Object
+object "stateIter : StateBasedIterator" as iter{
+    targetState= "Production"
+    isDone= false
+}
+
+' Composite Hierarchy Links
+root o-- subCategory: children[0]
+subCategory o-- dec1: children[0]
+subCategory o-- leaf1: children[1]
+
+' Decorator Wrapping Links
+dec1 o-- dec2: film
+dec2 o-- leaf2: film
+
+' State Context Links
+leaf2 --> state1: state
+leaf1 --> state2: state
+
+' Iterator Traversal Links
+iter --> subCategory: aggregate
+iter ..> dec1: currentIter
+
+note bottom of iter
+  Traversing 'subCategory'
+  currentIter matches "Production"
+end note
+
+note bottom of dec1
+  Chained Decorator:
+  Comedy wraps Thriller,
+  wrapping BlockbusterFilm
+end note
+
+@enduml
