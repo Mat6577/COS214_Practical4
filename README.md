@@ -9,14 +9,14 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 |Composite|[FilmCategories](#film)|
 |State|[States](#states)|
 |Decorator|[Genres](#genres)| 
----
+##
 ---
 ## Installation
 ```bash
 git clone https://github.com/Mat6577/COS214_Practical4/edit/main
 cd main
 ```
----
+##
 ---
 ## Iterator
 ### This implements the Iterator pattern.
