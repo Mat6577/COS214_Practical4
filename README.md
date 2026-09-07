@@ -40,6 +40,7 @@ We were tasked with implementing four design patterns: **Composite, Decorator, I
 | Pattern participants | mapping |
 |----------------------|---------|
 |**Composite**| FilmCategories |
+|**Component**| Film |
 |**Leafs**|AnimatedFilm|
 ||BlockbusterFilm|
 ||IndependentFilm|
