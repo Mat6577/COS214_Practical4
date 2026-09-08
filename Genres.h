@@ -7,10 +7,9 @@
 #include "Film.h"
 
 class Genres : public Film {
-
-public:
+private:
 	Film* film;
-
+public:
 	~Genres();
 
 	Film* getFilm();
