@@ -9,42 +9,42 @@ Inheritance diagram for Production:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \doxymbox{\hyperlink{class_production_a93a2f81bd9c7423138f108090cd0d75f}{print\+State}} ()
+void \doxymbox{\hyperlink{class_production_a6c2928e5082a19e758262c741363d0fc}{print\+State}} () override
 \item 
-void \doxymbox{\hyperlink{class_production_a1a39be89c12367ddadae0f0bb6f2be97}{get\+State\+Information}} ()
+std::\+string \doxymbox{\hyperlink{class_production_a8d0565dba608c4e721659ec12190f2cb}{get\+State\+Information}} () override
 \item 
-void \doxymbox{\hyperlink{class_production_a2b53196126bef0b0cba4779de562e0ad}{change\+State}} (Film\+Type \texorpdfstring{$\ast$}{*}Film)
+void \doxymbox{\hyperlink{class_production_aaab6597858b613a2196527880fcd8e05}{change\+State}} (\doxymbox{\hyperlink{class_film_types}{Film\+Types}} \texorpdfstring{$\ast$}{*}film\+Type) override
 \end{DoxyCompactItemize}
 
 
 \label{class_production_doc-func-members}
 \Hypertarget{class_production_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_production_a2b53196126bef0b0cba4779de562e0ad}\index{Production@{Production}!changeState@{changeState}}
+\Hypertarget{class_production_aaab6597858b613a2196527880fcd8e05}\index{Production@{Production}!changeState@{changeState}}
 \index{changeState@{changeState}!Production@{Production}}
 \doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
-{\footnotesize\ttfamily \label{class_production_a2b53196126bef0b0cba4779de562e0ad} 
-void Production::\+change\+State (\begin{DoxyParamCaption}\item[{Film\+Type \texorpdfstring{$\ast$}{*}}]{Film}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_production_aaab6597858b613a2196527880fcd8e05} 
+void Production::\+change\+State (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_film_types}{Film\+Types}} \texorpdfstring{$\ast$}{*}}]{film\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_states}{States}}.
 
-\Hypertarget{class_production_a1a39be89c12367ddadae0f0bb6f2be97}\index{Production@{Production}!getStateInformation@{getStateInformation}}
+\Hypertarget{class_production_a8d0565dba608c4e721659ec12190f2cb}\index{Production@{Production}!getStateInformation@{getStateInformation}}
 \index{getStateInformation@{getStateInformation}!Production@{Production}}
 \doxysubsubsection{\texorpdfstring{getStateInformation()}{getStateInformation()}}
-{\footnotesize\ttfamily \label{class_production_a1a39be89c12367ddadae0f0bb6f2be97} 
-void Production::\+get\+State\+Information (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_production_a8d0565dba608c4e721659ec12190f2cb} 
+std::\+string Production::\+get\+State\+Information (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_states}{States}}.
 
-\Hypertarget{class_production_a93a2f81bd9c7423138f108090cd0d75f}\index{Production@{Production}!printState@{printState}}
+\Hypertarget{class_production_a6c2928e5082a19e758262c741363d0fc}\index{Production@{Production}!printState@{printState}}
 \index{printState@{printState}!Production@{Production}}
 \doxysubsubsection{\texorpdfstring{printState()}{printState()}}
-{\footnotesize\ttfamily \label{class_production_a93a2f81bd9c7423138f108090cd0d75f} 
-void Production::\+print\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_production_a6c2928e5082a19e758262c741363d0fc} 
+void Production::\+print\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -54,5 +54,5 @@ Implements \doxymbox{\hyperlink{class_states}{States}}.
 
 The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-Production.\+h\item 
-Production.\+cpp\end{DoxyCompactItemize}
+States.\+h\item 
+States.\+cpp\end{DoxyCompactItemize}

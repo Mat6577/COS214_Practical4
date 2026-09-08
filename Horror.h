@@ -7,7 +7,7 @@
 #include "Film.h"
 #include "Genres.h"
 
-class Horror : Genres {
+class Horror : public Genres {
 
 
 public:
@@ -15,7 +15,7 @@ public:
 
 	void printMetaData();
 
-	Horror();
+	Horror(Film* film);
 };
 
 #endif

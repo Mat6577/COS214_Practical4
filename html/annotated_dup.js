@@ -1,10 +1,25 @@
 var annotated_dup =
 [
+    [ "AbstractFilmCategories", "class_abstract_film_categories.html", null ],
+    [ "AnimatedFilm", "class_animated_film.html", null ],
+    [ "BlockbusterFilm", "class_blockbuster_film.html", null ],
     [ "Comedy", "class_comedy.html", "class_comedy" ],
+    [ "Development", "class_development.html", null ],
+    [ "Distribution", "class_distribution.html", null ],
     [ "Drama", "class_drama.html", "class_drama" ],
     [ "Film", "class_film.html", null ],
+    [ "FilmCategories", "class_film_categories.html", null ],
+    [ "FilmCategoryIterator", "class_film_category_iterator.html", null ],
+    [ "FilmIterator", "class_film_iterator.html", null ],
+    [ "FilmTypes", "class_film_types.html", null ],
     [ "Genres", "class_genres.html", "class_genres" ],
     [ "Horror", "class_horror.html", "class_horror" ],
+    [ "IndependentFilm", "class_independent_film.html", null ],
+    [ "LiveActionFilm", "class_live_action_film.html", null ],
+    [ "Production", "class_production.html", null ],
     [ "Romance", "class_romance.html", "class_romance" ],
+    [ "ShortFilm", "class_short_film.html", null ],
+    [ "StateBasedIterator", "class_state_based_iterator.html", null ],
+    [ "States", "class_states.html", null ],
     [ "Thriller", "class_thriller.html", "class_thriller" ]
 ];

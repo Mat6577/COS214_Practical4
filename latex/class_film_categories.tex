@@ -3,118 +3,86 @@
 Inheritance diagram for Film\+Categories:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_film_categories}
+\includegraphics[height=3.000000cm]{class_film_categories}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-List$<$ \doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_film_categories_a9d648d45fb029b593f125ffca93d1cd1}{get\+Children}} ()
+\Hypertarget{class_film_categories_a938bc2ff4147a44ff9040185ded46190}\label{class_film_categories_a938bc2ff4147a44ff9040185ded46190} 
+{\bfseries Film\+Categories} (std::\+string name)
 \item 
-void \doxymbox{\hyperlink{class_film_categories_a5a401c9ccd2be23b561b6ecc5dee6013}{set\+Children}} (List$<$ \doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} $>$ children)
+std::\+string \doxymbox{\hyperlink{class_film_categories_ab95bd6c029e621fb30922b65bbfdb0da}{get\+Meta\+Data}} () override
 \item 
-\doxymbox{\hyperlink{class_film_iterator}{Film\+Iterator}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_film_categories_a089a3c04f4af7386d48c8d20d0127ab5}{create\+Iterator}} ()
+void \doxymbox{\hyperlink{class_film_categories_a06cf13ffc5918fb24f5a1734b079216f}{print\+Meta\+Data}} () override
 \item 
-string \doxymbox{\hyperlink{class_film_categories_a55333a99eacebadbb9355f963e9890ba}{get\+Meta\+Data}} ()
+\doxymbox{\hyperlink{class_film_iterator}{Film\+Iterator}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_film_categories_a32530857206a4961e8418edf487a00bb}{create\+Iterator}} () override
 \item 
-void \doxymbox{\hyperlink{class_film_categories_aa4879b309067d8f49d5e0ffce233a6be}{print\+Meta\+Data}} ()
-\item 
-void \doxymbox{\hyperlink{class_film_categories_a428f248945832511c57b535fe087a63e}{add}} (\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*}child)
-\item 
-void \doxymbox{\hyperlink{class_film_categories_a3ac636940933f56eb6f75f6e73b3d162}{remove}} (\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*}child)
-\item 
-\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_film_categories_a1cb4bdcb4f431cbea2f8a98fcc751c4c}{get\+Child}} (int index)
+\doxymbox{\hyperlink{class_film_iterator}{Film\+Iterator}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_film_categories_a64301ec90009d8887d2aa102fb86843f}{create\+State\+Iterator}} (const std::\+string \&state)
 \end{DoxyCompactItemize}
-\doxysubsubsection*{Public Attributes}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_film_categories_ada40f7863b23d82359f66896f9560a21}\label{class_film_categories_ada40f7863b23d82359f66896f9560a21} 
-List$<$ \doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries children}
+virtual std::\+list$<$ \doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Children} ()
+\item 
+virtual void {\bfseries set\+Children} (std::\+list$<$ \doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} $>$ children)
+\item 
+virtual void {\bfseries add} (\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*}child)
+\item 
+virtual void {\bfseries remove} (\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*}child)
+\item 
+virtual \doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Child} (int index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}}
+\begin{DoxyCompactItemize}
+\item 
+std::\+list$<$ \doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries children}
 \end{DoxyCompactItemize}
 
 
 \label{class_film_categories_doc-func-members}
 \Hypertarget{class_film_categories_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_film_categories_a428f248945832511c57b535fe087a63e}\index{FilmCategories@{FilmCategories}!add@{add}}
-\index{add@{add}!FilmCategories@{FilmCategories}}
-\doxysubsubsection{\texorpdfstring{add()}{add()}}
-{\footnotesize\ttfamily \label{class_film_categories_a428f248945832511c57b535fe087a63e} 
-void Film\+Categories::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*}}]{child}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Implements \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}.
-
-\Hypertarget{class_film_categories_a089a3c04f4af7386d48c8d20d0127ab5}\index{FilmCategories@{FilmCategories}!createIterator@{createIterator}}
+\Hypertarget{class_film_categories_a32530857206a4961e8418edf487a00bb}\index{FilmCategories@{FilmCategories}!createIterator@{createIterator}}
 \index{createIterator@{createIterator}!FilmCategories@{FilmCategories}}
 \doxysubsubsection{\texorpdfstring{createIterator()}{createIterator()}}
-{\footnotesize\ttfamily \label{class_film_categories_a089a3c04f4af7386d48c8d20d0127ab5} 
-\doxymbox{\hyperlink{class_film_iterator}{Film\+Iterator}} \texorpdfstring{$\ast$}{*} Film\+Categories::\+create\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_film_categories_a32530857206a4961e8418edf487a00bb} 
+\doxymbox{\hyperlink{class_film_iterator}{Film\+Iterator}} \texorpdfstring{$\ast$}{*} Film\+Categories::\+create\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}.
 
-\Hypertarget{class_film_categories_a1cb4bdcb4f431cbea2f8a98fcc751c4c}\index{FilmCategories@{FilmCategories}!getChild@{getChild}}
-\index{getChild@{getChild}!FilmCategories@{FilmCategories}}
-\doxysubsubsection{\texorpdfstring{getChild()}{getChild()}}
-{\footnotesize\ttfamily \label{class_film_categories_a1cb4bdcb4f431cbea2f8a98fcc751c4c} 
-\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} Film\+Categories::\+get\+Child (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\Hypertarget{class_film_categories_a64301ec90009d8887d2aa102fb86843f}\index{FilmCategories@{FilmCategories}!createStateIterator@{createStateIterator}}
+\index{createStateIterator@{createStateIterator}!FilmCategories@{FilmCategories}}
+\doxysubsubsection{\texorpdfstring{createStateIterator()}{createStateIterator()}}
+{\footnotesize\ttfamily \label{class_film_categories_a64301ec90009d8887d2aa102fb86843f} 
+\doxymbox{\hyperlink{class_film_iterator}{Film\+Iterator}} \texorpdfstring{$\ast$}{*} Film\+Categories::\+create\+State\+Iterator (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}.
 
-\Hypertarget{class_film_categories_a9d648d45fb029b593f125ffca93d1cd1}\index{FilmCategories@{FilmCategories}!getChildren@{getChildren}}
-\index{getChildren@{getChildren}!FilmCategories@{FilmCategories}}
-\doxysubsubsection{\texorpdfstring{getChildren()}{getChildren()}}
-{\footnotesize\ttfamily \label{class_film_categories_a9d648d45fb029b593f125ffca93d1cd1} 
-List$<$ \doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} $>$ Film\+Categories::\+get\+Children (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Implements \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}.
-
-\Hypertarget{class_film_categories_a55333a99eacebadbb9355f963e9890ba}\index{FilmCategories@{FilmCategories}!getMetaData@{getMetaData}}
+\Hypertarget{class_film_categories_ab95bd6c029e621fb30922b65bbfdb0da}\index{FilmCategories@{FilmCategories}!getMetaData@{getMetaData}}
 \index{getMetaData@{getMetaData}!FilmCategories@{FilmCategories}}
 \doxysubsubsection{\texorpdfstring{getMetaData()}{getMetaData()}}
-{\footnotesize\ttfamily \label{class_film_categories_a55333a99eacebadbb9355f963e9890ba} 
-string Film\+Categories::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_film_categories_ab95bd6c029e621fb30922b65bbfdb0da} 
+std::\+string Film\+Categories::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}.
+Implements \doxymbox{\hyperlink{class_film}{Film}}.
 
-\Hypertarget{class_film_categories_aa4879b309067d8f49d5e0ffce233a6be}\index{FilmCategories@{FilmCategories}!printMetaData@{printMetaData}}
+\Hypertarget{class_film_categories_a06cf13ffc5918fb24f5a1734b079216f}\index{FilmCategories@{FilmCategories}!printMetaData@{printMetaData}}
 \index{printMetaData@{printMetaData}!FilmCategories@{FilmCategories}}
 \doxysubsubsection{\texorpdfstring{printMetaData()}{printMetaData()}}
-{\footnotesize\ttfamily \label{class_film_categories_aa4879b309067d8f49d5e0ffce233a6be} 
-void Film\+Categories::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_film_categories_a06cf13ffc5918fb24f5a1734b079216f} 
+void Film\+Categories::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}.
-
-\Hypertarget{class_film_categories_a3ac636940933f56eb6f75f6e73b3d162}\index{FilmCategories@{FilmCategories}!remove@{remove}}
-\index{remove@{remove}!FilmCategories@{FilmCategories}}
-\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
-{\footnotesize\ttfamily \label{class_film_categories_a3ac636940933f56eb6f75f6e73b3d162} 
-void Film\+Categories::\+remove (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*}}]{child}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Implements \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}.
-
-\Hypertarget{class_film_categories_a5a401c9ccd2be23b561b6ecc5dee6013}\index{FilmCategories@{FilmCategories}!setChildren@{setChildren}}
-\index{setChildren@{setChildren}!FilmCategories@{FilmCategories}}
-\doxysubsubsection{\texorpdfstring{setChildren()}{setChildren()}}
-{\footnotesize\ttfamily \label{class_film_categories_a5a401c9ccd2be23b561b6ecc5dee6013} 
-void Film\+Categories::\+set\+Children (\begin{DoxyParamCaption}\item[{List$<$ \doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} $>$}]{children}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Implements \doxymbox{\hyperlink{class_abstract_film_categories}{Abstract\+Film\+Categories}}.
+Implements \doxymbox{\hyperlink{class_film}{Film}}.
 
 
 

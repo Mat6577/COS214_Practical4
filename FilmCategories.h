@@ -5,8 +5,10 @@
 
 class FilmCategories : public AbstractFilmCategories
 {
+private:
+    std::string categoryName;
 public:
-    FilmCategories();
+    FilmCategories(std::string name);
     ~FilmCategories() override;
 
     std::string getMetaData() override;

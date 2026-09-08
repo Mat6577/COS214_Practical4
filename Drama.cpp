@@ -23,4 +23,5 @@ void Drama::printMetaData() {
 	std::cout << this->getMetaData();
 }
 
-Drama::Drama() {}
+Drama::Drama(Film* film) 
+	: Genres(film) {}

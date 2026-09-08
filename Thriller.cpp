@@ -23,7 +23,8 @@ void Thriller::printMetaData() {
 	std::cout << this->getMetaData();
 }
 
-Thriller::Thriller() {}
+Thriller::Thriller(Film* film) 
+	: Genres(film) {}
 
 
 

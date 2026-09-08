@@ -22,4 +22,6 @@ void Horror::printMetaData() {
 	std::cout << this->getMetaData();
 }
 
-Horror::Horror() {}
+Horror::Horror(Film* film) 
+	: Genres(film) {}
+

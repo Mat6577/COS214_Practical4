@@ -3,36 +3,49 @@
 Inheritance diagram for Short\+Film:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_short_film}
+\includegraphics[height=3.000000cm]{class_short_film}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-string \doxymbox{\hyperlink{class_short_film_afc9c1d060b7d677570533b73885e072a}{get\+Meta\+Data}} ()
+std::\+string \doxymbox{\hyperlink{class_short_film_a7862d8999050fd028607d215bb7efd2b}{get\+Meta\+Data}} () override
 \item 
-void \doxymbox{\hyperlink{class_short_film_a3cda510024b85820d6367dd47df0a662}{print\+Meta\+Data}} ()
+void \doxymbox{\hyperlink{class_short_film_a362b465cfd17c8ca7f0e00c1530bfd6c}{print\+Meta\+Data}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_film_types}{Film\+Types}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+State} (\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*}state)
+\item 
+\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*} {\bfseries get\+State} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_film_types}{Film\+Types}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*} {\bfseries state}
 \end{DoxyCompactItemize}
 
 
 \label{class_short_film_doc-func-members}
 \Hypertarget{class_short_film_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_short_film_afc9c1d060b7d677570533b73885e072a}\index{ShortFilm@{ShortFilm}!getMetaData@{getMetaData}}
+\Hypertarget{class_short_film_a7862d8999050fd028607d215bb7efd2b}\index{ShortFilm@{ShortFilm}!getMetaData@{getMetaData}}
 \index{getMetaData@{getMetaData}!ShortFilm@{ShortFilm}}
 \doxysubsubsection{\texorpdfstring{getMetaData()}{getMetaData()}}
-{\footnotesize\ttfamily \label{class_short_film_afc9c1d060b7d677570533b73885e072a} 
-string Short\+Film::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_short_film_a7862d8999050fd028607d215bb7efd2b} 
+std::\+string Short\+Film::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_film_types}{Film\+Types}}.
 
-\Hypertarget{class_short_film_a3cda510024b85820d6367dd47df0a662}\index{ShortFilm@{ShortFilm}!printMetaData@{printMetaData}}
+\Hypertarget{class_short_film_a362b465cfd17c8ca7f0e00c1530bfd6c}\index{ShortFilm@{ShortFilm}!printMetaData@{printMetaData}}
 \index{printMetaData@{printMetaData}!ShortFilm@{ShortFilm}}
 \doxysubsubsection{\texorpdfstring{printMetaData()}{printMetaData()}}
-{\footnotesize\ttfamily \label{class_short_film_a3cda510024b85820d6367dd47df0a662} 
-void Short\+Film::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_short_film_a362b465cfd17c8ca7f0e00c1530bfd6c} 
+void Short\+Film::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -42,5 +55,5 @@ Implements \doxymbox{\hyperlink{class_film_types}{Film\+Types}}.
 
 The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-Short\+Film.\+h\item 
-Short\+Film.\+cpp\end{DoxyCompactItemize}
+Film\+Types.\+h\item 
+Film\+Types.\+cpp\end{DoxyCompactItemize}

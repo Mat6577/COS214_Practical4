@@ -8,7 +8,7 @@
 #include "Genres.h"
 
 
-class Comedy : Genres {
+class Comedy : public Genres {
 
 
 public:
@@ -16,7 +16,7 @@ public:
 
 	void printMetaData();
 
-	Comedy();
+	Comedy(Film* film);
 };
 
 #endif

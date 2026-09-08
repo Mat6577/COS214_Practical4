@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>COS 214 Practical 4: COS214_Practical4</title>
+<title>My Project: COS214_Practical4</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">COS 214 Practical 4<span id="projectnumber">&#160;4</span>
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">We were instructed to implement the composite, decorator, state, and iterator patters</div>
   </td>
  </tr>
  </tbody>
@@ -113,10 +112,127 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('md__r_e_a_d_m_
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
-<p>Fourth practical for COS 214 (Design Patterns). </p>
+<p>Fourth practical for COS 214 (Design Patterns). We were tasked with implementing four design patterns: <b>Composite, Decorator, Iterator, and State</b>.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Table of contents</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>Design Pattern</b>  </th><th class="markdownTableHeadNone"><b>Name</b>  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Iterator  </td><td class="markdownTableBodyNone">Iterator  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Composite  </td><td class="markdownTableBodyNone">FilmCategories  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">State  </td><td class="markdownTableBodyNone">States  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Decorator  </td><td class="markdownTableBodyNone">Genres  </td></tr>
+</table>
+<hr  />
+ <h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Features</h1>
+<ul>
+<li>You, as the user, can plan a movie</li>
+<li>Then you can add/categorize the movie under multiple genres</li>
+<li>When you are done with the planning, you will follow the different states that each movie must follow</li>
+<li>Once you've reached the deploy state, the movie will be stored under a directory</li>
+<li>This directory stores all movies with similar specifications to your movie </li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+- The directory allows ease of traversal from one directory to the next</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+Installation</h1>
+<div class="fragment"><div class="line">git clone https://github.com/Mat6577/COS214_Practical4/edit/main</div>
+<div class="line">cd main</div>
+</div><!-- fragment --> <h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+##</h1>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+Iterator</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+This implements the Iterator pattern.</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Pattern participants  </th><th class="markdownTableHeadNone">mapping  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Abstract Iterator</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_film_category_iterator.html">FilmCategoryIterator</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_state_based_iterator.html">StateBasedIterator</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Concrete Iterators</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_film_iterator.html">FilmIterator</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>Abstract Aggregate</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_abstract_film_categories.html">AbstractFilmCategories</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Concrete Aggregate</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_film_categories.html">FilmCategories</a>  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+States</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+This implements the state pattern.</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Pattern participants  </th><th class="markdownTableHeadNone">mapping  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Client</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_film_types.html">FilmTypes</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>AbstractState</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_states.html">States</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>ConcreteState</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_development.html">Development</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_distribution.html">Distribution</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_production.html">Production</a>  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+Film</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+This implements the composite pattern.</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Pattern participants  </th><th class="markdownTableHeadNone">mapping  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Composite</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_film_categories.html">FilmCategories</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>Component</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_film.html">Film</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Leafs</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_animated_film.html">AnimatedFilm</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_blockbuster_film.html">BlockbusterFilm</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_independent_film.html">IndependentFilm</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_live_action_film.html">LiveActionFilm</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_short_film.html">ShortFilm</a>  </td></tr>
+</table>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+Genres</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+This implements the decorator pattern.</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Pattern participants  </th><th class="markdownTableHeadNone">mapping  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>Abstract Decorator</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_genres.html">Genres</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>Concrete Decorators</b>  </td><td class="markdownTableBodyNone"><a class="el" href="class_comedy.html">Comedy</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_drama.html">Drama</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_horror.html">Horror</a>  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_romance.html">Romance</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="class_thriller.html">Thriller</a>  </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

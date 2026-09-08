@@ -6,11 +6,10 @@
 
 #include "Film.h"
 
-class Genres : Film {
-
-public:
+class Genres : public Film {
+private:
 	Film* film;
-
+public:
 	~Genres();
 
 	Film* getFilm();
@@ -21,7 +20,7 @@ public:
 
 	virtual void printMetaData() = 0;
 
-	Genres();
+	Genres(Film* film);
 };
 
 #endif

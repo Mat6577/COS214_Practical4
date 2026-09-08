@@ -24,8 +24,26 @@
 */
 var NAVTREE =
 [
-  [ "COS 214 Practical 4", "index.html", [
-    [ "COS214_Practical4", "md__r_e_a_d_m_e.html", null ],
+  [ "My Project", "index.html", [
+    [ "COS214_Practical4", "md__r_e_a_d_m_e.html", [
+      [ "Table of contents", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Features", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "- The directory allows ease of traversal from one directory to the next", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "Installation", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "##", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
+      [ "Iterator", "md__r_e_a_d_m_e.html#autotoc_md6", [
+        [ "This implements the Iterator pattern.", "md__r_e_a_d_m_e.html#autotoc_md7", null ]
+      ] ],
+      [ "States", "md__r_e_a_d_m_e.html#autotoc_md8", [
+        [ "This implements the state pattern.", "md__r_e_a_d_m_e.html#autotoc_md9", null ]
+      ] ],
+      [ "Film", "md__r_e_a_d_m_e.html#autotoc_md10", [
+        [ "This implements the composite pattern.", "md__r_e_a_d_m_e.html#autotoc_md11", null ]
+      ] ],
+      [ "Genres", "md__r_e_a_d_m_e.html#autotoc_md12", [
+        [ "This implements the decorator pattern.", "md__r_e_a_d_m_e.html#autotoc_md13", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -43,7 +61,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_comedy_8h_source.html"
+"_abstract_film_categories_8h_source.html"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

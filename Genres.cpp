@@ -1,10 +1,9 @@
 #include "Genres.h"
 
-Genres::Genres() : film(nullptr) {}				// Constructor
+Genres::Genres(Film* film) : film(film) {}				// Constructor
 
 Genres::~Genres()
-{
-	delete film;					// Null check for the destructor
+{				
 }
 
 /**

@@ -16,6 +16,7 @@ FilmTypes::~FilmTypes()
 
 void FilmTypes::setState(States* state)
 {
+    delete this->state;
     this->state = state;
 }
 
@@ -25,6 +26,10 @@ States* FilmTypes::getState()
 }
 
 // LiveActionFilm
+
+LiveActionFilm::LiveActionFilm()
+{
+}
 
 std::string LiveActionFilm::getMetaData()
 {
@@ -38,6 +43,10 @@ void LiveActionFilm::printMetaData()
 
 // AnimatedFilm 
 
+AnimatedFilm::AnimatedFilm()
+{
+}
+
 std::string AnimatedFilm::getMetaData()
 {
     return "Animated Film";
@@ -49,6 +58,10 @@ void AnimatedFilm::printMetaData()
 }
 
 // ShortFilm
+
+ShortFilm::ShortFilm()
+{
+}
 
 std::string ShortFilm::getMetaData()
 {
@@ -62,6 +75,10 @@ void ShortFilm::printMetaData()
 
 // IndependentFilm 
 
+IndependentFilm::IndependentFilm()
+{
+}
+
 std::string IndependentFilm::getMetaData()
 {
     return "Independent Film";
@@ -73,6 +90,10 @@ void IndependentFilm::printMetaData()
 }
 
 // BlockbusterFilm
+
+BlockbusterFilm::BlockbusterFilm()
+{
+}
 
 std::string BlockbusterFilm::getMetaData()
 {

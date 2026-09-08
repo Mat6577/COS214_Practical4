@@ -9,45 +9,57 @@ Inheritance diagram for Film\+Category\+Iterator:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \doxymbox{\hyperlink{class_film_category_iterator_a2b254c7dcb5589552c2105e034980cd0}{first}} ()
+\Hypertarget{class_film_category_iterator_a213c9b1e30aaca10e7fb18eac6c5f0f7}\label{class_film_category_iterator_a213c9b1e30aaca10e7fb18eac6c5f0f7} 
+{\bfseries Film\+Category\+Iterator} (const \doxymbox{\hyperlink{class_film_categories}{Film\+Categories}} \texorpdfstring{$\ast$}{*}cat)
 \item 
-void \doxymbox{\hyperlink{class_film_category_iterator_aadee09ed15a67b2743605068ee5fc0d3}{next}} ()
+void \doxymbox{\hyperlink{class_film_category_iterator_a5848a0b0635ea79a02c3c53119e8510c}{first}} () override
 \item 
-\Hypertarget{class_film_category_iterator_af0cb30948ca867ff165f7e07640cbc2f}\label{class_film_category_iterator_af0cb30948ca867ff165f7e07640cbc2f} 
-bool {\bfseries Is\+Done} ()
+void \doxymbox{\hyperlink{class_film_category_iterator_a4241318e51a108580a31016f52d48c48}{next}} () override
 \item 
-\doxymbox{\hyperlink{class_film}{Film}} \& \doxymbox{\hyperlink{class_film_category_iterator_a2132dbb32c8b8c01e337932df8228828}{current\+Item}} ()
+bool \doxymbox{\hyperlink{class_film_category_iterator_a6754ab01e5b32626667bbefa56c7cf0f}{is\+Done}} () const override
+\item 
+\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_film_category_iterator_a3e9858caa515820fa50e41a6087902fc}{current\+Item}} () const override
 \end{DoxyCompactItemize}
 
 
 \label{class_film_category_iterator_doc-func-members}
 \Hypertarget{class_film_category_iterator_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_film_category_iterator_a2132dbb32c8b8c01e337932df8228828}\index{FilmCategoryIterator@{FilmCategoryIterator}!currentItem@{currentItem}}
+\Hypertarget{class_film_category_iterator_a3e9858caa515820fa50e41a6087902fc}\index{FilmCategoryIterator@{FilmCategoryIterator}!currentItem@{currentItem}}
 \index{currentItem@{currentItem}!FilmCategoryIterator@{FilmCategoryIterator}}
 \doxysubsubsection{\texorpdfstring{currentItem()}{currentItem()}}
-{\footnotesize\ttfamily \label{class_film_category_iterator_a2132dbb32c8b8c01e337932df8228828} 
-\doxymbox{\hyperlink{class_film}{Film}} \& Film\+Category\+Iterator::\+current\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_film_category_iterator_a3e9858caa515820fa50e41a6087902fc} 
+\doxymbox{\hyperlink{class_film}{Film}} \texorpdfstring{$\ast$}{*} Film\+Category\+Iterator::\+current\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_film_iterator}{Film\+Iterator}}.
 
-\Hypertarget{class_film_category_iterator_a2b254c7dcb5589552c2105e034980cd0}\index{FilmCategoryIterator@{FilmCategoryIterator}!first@{first}}
+\Hypertarget{class_film_category_iterator_a5848a0b0635ea79a02c3c53119e8510c}\index{FilmCategoryIterator@{FilmCategoryIterator}!first@{first}}
 \index{first@{first}!FilmCategoryIterator@{FilmCategoryIterator}}
 \doxysubsubsection{\texorpdfstring{first()}{first()}}
-{\footnotesize\ttfamily \label{class_film_category_iterator_a2b254c7dcb5589552c2105e034980cd0} 
-void Film\+Category\+Iterator::\+first (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_film_category_iterator_a5848a0b0635ea79a02c3c53119e8510c} 
+void Film\+Category\+Iterator::\+first (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_film_iterator}{Film\+Iterator}}.
 
-\Hypertarget{class_film_category_iterator_aadee09ed15a67b2743605068ee5fc0d3}\index{FilmCategoryIterator@{FilmCategoryIterator}!next@{next}}
+\Hypertarget{class_film_category_iterator_a6754ab01e5b32626667bbefa56c7cf0f}\index{FilmCategoryIterator@{FilmCategoryIterator}!isDone@{isDone}}
+\index{isDone@{isDone}!FilmCategoryIterator@{FilmCategoryIterator}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily \label{class_film_category_iterator_a6754ab01e5b32626667bbefa56c7cf0f} 
+bool Film\+Category\+Iterator::\+is\+Done (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \doxymbox{\hyperlink{class_film_iterator}{Film\+Iterator}}.
+
+\Hypertarget{class_film_category_iterator_a4241318e51a108580a31016f52d48c48}\index{FilmCategoryIterator@{FilmCategoryIterator}!next@{next}}
 \index{next@{next}!FilmCategoryIterator@{FilmCategoryIterator}}
 \doxysubsubsection{\texorpdfstring{next()}{next()}}
-{\footnotesize\ttfamily \label{class_film_category_iterator_aadee09ed15a67b2743605068ee5fc0d3} 
-void Film\+Category\+Iterator::\+next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_film_category_iterator_a4241318e51a108580a31016f52d48c48} 
+void Film\+Category\+Iterator::\+next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 

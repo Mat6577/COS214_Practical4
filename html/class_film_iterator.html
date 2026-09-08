@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>COS 214 Practical 4: FilmIterator Class Reference</title>
+<title>My Project: FilmIterator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">COS 214 Practical 4<span id="projectnumber">&#160;4</span>
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">We were instructed to implement the composite, decorator, state, and iterator patters</div>
   </td>
  </tr>
  </tbody>
@@ -119,6 +118,7 @@ Inheritance diagram for FilmIterator:</div>
   <img src="class_film_iterator.png" usemap="#FilmIterator_map" alt=""/>
   <map id="FilmIterator_map" name="FilmIterator_map">
 <area href="class_film_category_iterator.html" alt="FilmCategoryIterator" shape="rect" coords="0,56,127,80"/>
+<area href="class_state_based_iterator.html" alt="StateBasedIterator" shape="rect" coords="137,56,264,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -128,14 +128,13 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight"><b>first</b> ()=0</td></tr>
 <tr class="memitem:a7db19c5db87706f2893c1b9e9fc5e476" id="r_a7db19c5db87706f2893c1b9e9fc5e476"><td class="memItemLeft"><a id="a7db19c5db87706f2893c1b9e9fc5e476" name="a7db19c5db87706f2893c1b9e9fc5e476"></a>
 virtual void&#160;</td><td class="memItemRight"><b>next</b> ()=0</td></tr>
-<tr class="memitem:a85188d7b9ce0a7c96d2f0a301da3e112" id="r_a85188d7b9ce0a7c96d2f0a301da3e112"><td class="memItemLeft"><a id="a85188d7b9ce0a7c96d2f0a301da3e112" name="a85188d7b9ce0a7c96d2f0a301da3e112"></a>
-virtual bool&#160;</td><td class="memItemRight"><b>isDone</b> ()=0</td></tr>
-<tr class="memitem:a955bc526c09744a0997706a45d49c85a" id="r_a955bc526c09744a0997706a45d49c85a"><td class="memItemLeft"><a id="a955bc526c09744a0997706a45d49c85a" name="a955bc526c09744a0997706a45d49c85a"></a>
-virtual <a class="el" href="class_film.html">Film</a> &amp;&#160;</td><td class="memItemRight"><b>currentItem</b> ()=0</td></tr>
+<tr class="memitem:a2f88565d0ea80dcb8ef71807bbcde71d" id="r_a2f88565d0ea80dcb8ef71807bbcde71d"><td class="memItemLeft"><a id="a2f88565d0ea80dcb8ef71807bbcde71d" name="a2f88565d0ea80dcb8ef71807bbcde71d"></a>
+virtual bool&#160;</td><td class="memItemRight"><b>isDone</b> () const =0</td></tr>
+<tr class="memitem:a80a120d789983cbc1f1c644fae9079fa" id="r_a80a120d789983cbc1f1c644fae9079fa"><td class="memItemLeft"><a id="a80a120d789983cbc1f1c644fae9079fa" name="a80a120d789983cbc1f1c644fae9079fa"></a>
+virtual <a class="el" href="class_film.html">Film</a> *&#160;</td><td class="memItemRight"><b>currentItem</b> () const =0</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_film_iterator_8h_source.html">FilmIterator.h</a></li>
-<li><b>FilmIterator.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.18.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>COS 214 Practical 4: FilmCategoryIterator Class Reference</title>
+<title>My Project: FilmCategoryIterator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="codefolding.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">COS 214 Practical 4<span id="projectnumber">&#160;4</span>
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">We were instructed to implement the composite, decorator, state, and iterator patters</div>
   </td>
  </tr>
  </tbody>
@@ -124,15 +123,16 @@ Inheritance diagram for FilmCategoryIterator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2b254c7dcb5589552c2105e034980cd0" id="r_a2b254c7dcb5589552c2105e034980cd0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b254c7dcb5589552c2105e034980cd0">first</a> ()</td></tr>
-<tr class="memitem:aadee09ed15a67b2743605068ee5fc0d3" id="r_aadee09ed15a67b2743605068ee5fc0d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aadee09ed15a67b2743605068ee5fc0d3">next</a> ()</td></tr>
-<tr class="memitem:af0cb30948ca867ff165f7e07640cbc2f" id="r_af0cb30948ca867ff165f7e07640cbc2f"><td class="memItemLeft"><a id="af0cb30948ca867ff165f7e07640cbc2f" name="af0cb30948ca867ff165f7e07640cbc2f"></a>
-bool&#160;</td><td class="memItemRight"><b>IsDone</b> ()</td></tr>
-<tr class="memitem:a2132dbb32c8b8c01e337932df8228828" id="r_a2132dbb32c8b8c01e337932df8228828"><td class="memItemLeft"><a class="el" href="class_film.html">Film</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2132dbb32c8b8c01e337932df8228828">currentItem</a> ()</td></tr>
+<tr class="memitem:a213c9b1e30aaca10e7fb18eac6c5f0f7" id="r_a213c9b1e30aaca10e7fb18eac6c5f0f7"><td class="memItemLeft"><a id="a213c9b1e30aaca10e7fb18eac6c5f0f7" name="a213c9b1e30aaca10e7fb18eac6c5f0f7"></a>
+&#160;</td><td class="memItemRight"><b>FilmCategoryIterator</b> (const <a class="el" href="class_film_categories.html">FilmCategories</a> *cat)</td></tr>
+<tr class="memitem:a5848a0b0635ea79a02c3c53119e8510c" id="r_a5848a0b0635ea79a02c3c53119e8510c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5848a0b0635ea79a02c3c53119e8510c">first</a> () override</td></tr>
+<tr class="memitem:a4241318e51a108580a31016f52d48c48" id="r_a4241318e51a108580a31016f52d48c48"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4241318e51a108580a31016f52d48c48">next</a> () override</td></tr>
+<tr class="memitem:a6754ab01e5b32626667bbefa56c7cf0f" id="r_a6754ab01e5b32626667bbefa56c7cf0f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6754ab01e5b32626667bbefa56c7cf0f">isDone</a> () const override</td></tr>
+<tr class="memitem:a3e9858caa515820fa50e41a6087902fc" id="r_a3e9858caa515820fa50e41a6087902fc"><td class="memItemLeft"><a class="el" href="class_film.html">Film</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a3e9858caa515820fa50e41a6087902fc">currentItem</a> () const override</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a2132dbb32c8b8c01e337932df8228828" name="a2132dbb32c8b8c01e337932df8228828"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2132dbb32c8b8c01e337932df8228828">&#9670;&#160;</a></span>currentItem()</h2>
+<a id="a3e9858caa515820fa50e41a6087902fc" name="a3e9858caa515820fa50e41a6087902fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e9858caa515820fa50e41a6087902fc">&#9670;&#160;</a></span>currentItem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,15 +141,15 @@ bool&#160;</td><td class="memItemRight"><b>IsDone</b> ()</td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_film.html">Film</a> &amp; FilmCategoryIterator::currentItem </td>
+          <td class="memname"><a class="el" href="class_film.html">Film</a> * FilmCategoryIterator::currentItem </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -158,8 +158,8 @@ bool&#160;</td><td class="memItemRight"><b>IsDone</b> ()</td></tr>
 
 </div>
 </div>
-<a id="a2b254c7dcb5589552c2105e034980cd0" name="a2b254c7dcb5589552c2105e034980cd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b254c7dcb5589552c2105e034980cd0">&#9670;&#160;</a></span>first()</h2>
+<a id="a5848a0b0635ea79a02c3c53119e8510c" name="a5848a0b0635ea79a02c3c53119e8510c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5848a0b0635ea79a02c3c53119e8510c">&#9670;&#160;</a></span>first()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,7 +176,7 @@ bool&#160;</td><td class="memItemRight"><b>IsDone</b> ()</td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -185,8 +185,35 @@ bool&#160;</td><td class="memItemRight"><b>IsDone</b> ()</td></tr>
 
 </div>
 </div>
-<a id="aadee09ed15a67b2743605068ee5fc0d3" name="aadee09ed15a67b2743605068ee5fc0d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadee09ed15a67b2743605068ee5fc0d3">&#9670;&#160;</a></span>next()</h2>
+<a id="a6754ab01e5b32626667bbefa56c7cf0f" name="a6754ab01e5b32626667bbefa56c7cf0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6754ab01e5b32626667bbefa56c7cf0f">&#9670;&#160;</a></span>isDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FilmCategoryIterator::isDone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_film_iterator.html">FilmIterator</a>.</p>
+
+</div>
+</div>
+<a id="a4241318e51a108580a31016f52d48c48" name="a4241318e51a108580a31016f52d48c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4241318e51a108580a31016f52d48c48">&#9670;&#160;</a></span>next()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +230,7 @@ bool&#160;</td><td class="memItemRight"><b>IsDone</b> ()</td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

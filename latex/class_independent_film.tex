@@ -3,36 +3,49 @@
 Inheritance diagram for Independent\+Film:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_independent_film}
+\includegraphics[height=3.000000cm]{class_independent_film}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-string \doxymbox{\hyperlink{class_independent_film_a888339352895da4ea939922cd2537d7d}{get\+Meta\+Data}} ()
+std::\+string \doxymbox{\hyperlink{class_independent_film_afde891ab09cbfd3bb8d09936b0dc8c4d}{get\+Meta\+Data}} () override
 \item 
-void \doxymbox{\hyperlink{class_independent_film_aa83d62db2908bf9d74973b432af4349d}{print\+Meta\+Data}} ()
+void \doxymbox{\hyperlink{class_independent_film_aec40db3f954c2477a7118438a950182f}{print\+Meta\+Data}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_film_types}{Film\+Types}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries set\+State} (\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*}state)
+\item 
+\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*} {\bfseries get\+State} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_film_types}{Film\+Types}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_states}{States}} \texorpdfstring{$\ast$}{*} {\bfseries state}
 \end{DoxyCompactItemize}
 
 
 \label{class_independent_film_doc-func-members}
 \Hypertarget{class_independent_film_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_independent_film_a888339352895da4ea939922cd2537d7d}\index{IndependentFilm@{IndependentFilm}!getMetaData@{getMetaData}}
+\Hypertarget{class_independent_film_afde891ab09cbfd3bb8d09936b0dc8c4d}\index{IndependentFilm@{IndependentFilm}!getMetaData@{getMetaData}}
 \index{getMetaData@{getMetaData}!IndependentFilm@{IndependentFilm}}
 \doxysubsubsection{\texorpdfstring{getMetaData()}{getMetaData()}}
-{\footnotesize\ttfamily \label{class_independent_film_a888339352895da4ea939922cd2537d7d} 
-string Independent\+Film::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_independent_film_afde891ab09cbfd3bb8d09936b0dc8c4d} 
+std::\+string Independent\+Film::\+get\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \doxymbox{\hyperlink{class_film_types}{Film\+Types}}.
 
-\Hypertarget{class_independent_film_aa83d62db2908bf9d74973b432af4349d}\index{IndependentFilm@{IndependentFilm}!printMetaData@{printMetaData}}
+\Hypertarget{class_independent_film_aec40db3f954c2477a7118438a950182f}\index{IndependentFilm@{IndependentFilm}!printMetaData@{printMetaData}}
 \index{printMetaData@{printMetaData}!IndependentFilm@{IndependentFilm}}
 \doxysubsubsection{\texorpdfstring{printMetaData()}{printMetaData()}}
-{\footnotesize\ttfamily \label{class_independent_film_aa83d62db2908bf9d74973b432af4349d} 
-void Independent\+Film::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{class_independent_film_aec40db3f954c2477a7118438a950182f} 
+void Independent\+Film::\+print\+Meta\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -42,5 +55,5 @@ Implements \doxymbox{\hyperlink{class_film_types}{Film\+Types}}.
 
 The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-Independent\+Film.\+h\item 
-Independent\+Film.\+cpp\end{DoxyCompactItemize}
+Film\+Types.\+h\item 
+Film\+Types.\+cpp\end{DoxyCompactItemize}
